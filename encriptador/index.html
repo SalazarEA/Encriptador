@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img class="img_header" src="./assets/Logo@2x.png" alt="Logo Alura">
+    </header>
+    <main class="inicio">
+        <section class="parrafo">
+            <form action="">
+                <textarea class="texarea" type="text" name="encriptar" id="encriptar" placeholder="Ingrese el texto aqui"></textarea>
+                
+            </form>
+            <p class="p_btn">Solo letras minúsculas y sin acento</p>
+            <div class="btn_inicio">
+                
+                <input type="submit" onclick="encriptar()"  id="btnEncriptar" value="Encriptar">
+                <input type="submit" onclick="desencriptar()" id="btnDesencriptar" value="Desencritar">
+            </div>
+        </section>
+        <section class="resp">
+            <div class="recuadro">                
+                <div id="ocultar">
+                    <img class="img_muneco"  src="./assets/Muñeco.png" alt="muñeco">
+                    <div class="mensaje">
+                        <h2 class="tex_mensaje">Ningún mensaje fue encontrado</h2>
+                        <p class="p_mensaje">Ingrese el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </div>     
+            
+                <div id="mostrar_resultado">
+                    <textarea class="tex_resultado" type="text" name="resultado" id="result"></textarea>
+                    <input type="submit" onclick="copiarTexto()" value="Copiar" id="copiar">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+</html>

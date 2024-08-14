@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --color-primario :  #97a6ea;
+    --color-secundario : #0A3871;
+    --fuente-inter: "Inter", system-ui;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header{
+    padding: 2% 0% 0% 2%;
+}
+.img_header{
+    height: 48px;
+
+}
+.inicio{
+    width: 100%;
+    display: flex;
+    columns: 2 50%;
+    align-items: center;
+    padding: 3% 20% ;
+    justify-content: space-between;
+    
+}
+.parrafo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.texarea{
+    width: 670px;
+    height: 700px;
+    font-size: 32px;
+    color: #0A3871;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+
+}
+
+#encriptar{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    border: none;
+    outline: none;
+}
+
+.btn_inicio{
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    align-items: center;
+}
+.p_btn{
+    opacity: 80%;
+    font-family: var(--fuente-inter);
+    font-size: 12px;
+    font-weight: 400 ;
+    color: #495057;
+
+}
+
+
+#btnEncriptar{
+    width: 328px;
+    height: 67px;
+    background-color: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    
+    
+}
+#btnEncriptar:hover{
+    opacity: 50%;
+    border: 3px solid #d8dfe8;
+    cursor: pointer;
+}
+#btnDesencriptar{
+    width: 328px;
+    height: 67px;
+    background-color: #d8dfe8;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    color: #0A3871;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+
+
+}
+#btnDesencriptar:hover{
+    opacity: 50%;
+    border: 3px solid #0A3871;
+    cursor: pointer;
+}
+.resp{
+    width: 50%;
+    display: flex;
+}
+.recuadro{
+    height: 944px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 32px;
+    background-color: #ffffff;
+    top: 40px;
+    position: relative;
+
+}
+#ocultar{
+    visibility: visible;
+    position: absolute;
+}
+.img_muneco{
+    height: 304px;
+    width: 336px;
+    padding: 240px 32px 0 32px;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 336px;
+    height: 122px;
+    gap: 16px;
+    
+
+}
+.tex_mensaje{
+    font-family: var(--fuente-inter);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #343a40;
+}
+.p_mensaje{
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    font-weight: 400 ;
+    text-align: center;
+    color: #495057;
+}
+#copiar{
+    width: 336px;
+    height: 67px;
+    background-color: #d8dfe8;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    border: solid 1px;
+    font-family: Inter;
+    font-size: 16px;
+    color: #0A3871;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+}
+#copiar:hover{
+    cursor: pointer;
+    border: 3px solid #0A3871;
+    opacity: 70%;
+}
+#mostrar_resultado{
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 32px 0 32px;
+  
+}
+.tex_resultado{
+    width: 336px;
+    height: 781px;
+    padding-top: 10px;
+    border: none;
+    font-family: Inter;
+    font-size: 24px;
+    color: #495057;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    outline: none;
+}
+
+@media (max-width: 750px) {
+    .inicio{
+        padding: 0;
+    }
+
+    .texarea{
+        width: 50%;
+        width: auto;
+    }
+    .img_muneco{
+        display: none;
+    }
+    .tex_mensaje{
+        width: 50%;
+        padding: 0;
+       
+    }
+    .tex_resultado{
+        width: 50%;
+        padding: 0;
+    }
+    #copiar{
+        width: 50%;
+    }
+}
