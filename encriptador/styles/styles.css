@@ -17,7 +17,7 @@ body{
     box-sizing: border-box;
 }
 .header{
-    padding: 2% 0% 0% 2%;
+    padding: 1% 0% 0% 5%;
 }
 .img_header{
     height: 48px;
@@ -26,9 +26,8 @@ body{
 .inicio{
     width: 100%;
     display: flex;
-    columns: 2 50%;
     align-items: center;
-    padding: 3% 20% ;
+    padding: 1% 15% ;
     justify-content: space-between;
     
 }
@@ -36,11 +35,11 @@ body{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+
 }
 .texarea{
     width: 670px;
-    height: 700px;
+    height: 560px;
     font-size: 32px;
     color: #0A3871;
     font-family: var(--fuente-inter);
@@ -64,10 +63,14 @@ body{
 }
 .p_btn{
     opacity: 80%;
+    display: flex;
+    align-items: center;
     font-family: var(--fuente-inter);
     font-size: 12px;
     font-weight: 400 ;
     color: #495057;
+    padding-bottom: 9px;
+
 
 }
 
@@ -117,31 +120,32 @@ body{
     display: flex;
 }
 .recuadro{
-    height: 944px;
+    height: 800px;
     width: 400px;
     border: 2px solid black;
     border-radius: 32px;
     background-color: #ffffff;
-    top: 40px;
+    top: 15px;
     position: relative;
 
 }
 #ocultar{
     visibility: visible;
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .img_muneco{
     height: 304px;
     width: 336px;
-    padding: 240px 32px 0 32px;
+    padding: 120px 0 0 35px;
 }
 .mensaje{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px;
+    padding: 35px;
     width: 336px;
-    height: 122px;
     gap: 16px;
     
 
@@ -185,12 +189,12 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 32px 0 32px;
+  padding: 0 0 0 40px;
   
 }
 .tex_resultado{
-    width: 336px;
-    height: 781px;
+    width: 317px;
+    height: 630px;
     padding-top: 10px;
     border: none;
     font-family: Inter;
@@ -201,26 +205,96 @@ body{
     outline: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 350px) {
     .inicio{
-        padding: 0;
+        padding: 2% 0 0 5%;
+        flex-direction: column;
     }
 
     .texarea{
-        width: 50%;
-        width: auto;
+        width: 100%;
     }
     .img_muneco{
         display: none;
     }
-    .tex_mensaje{
-        width: 50%;
+    .parrafo{
+        width: 100%;
+    }
+    .resp{
+        width: 100%;
+    }
+    .btn_inicio{
+        flex-direction: column;
+    }
+    #mostrar_resultado{
+        width: 100%;
+        height: 90%;
+        position: absolute;
         padding: 0;
-       
     }
     .tex_resultado{
+        height: 100%;
+        width: 95%;
+    }
+
+    .recuadro{
+        width: 85%;
+        height: 180px;
+        padding: 2% 0 0 0;
+        box-sizing: content-box;
+    
+    }
+    .mensaje{
+        padding: 6% 0 0 3%;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+    }
+    #copiar{
         width: 50%;
+    }
+}
+@media (max-width: 750px) {
+    .inicio{
+        padding: 2% 0 0 5%;
+        flex-direction: column;
+    }
+
+    .texarea{
+        width: 100%;
+    }
+    .img_muneco{
+        display: none;
+    }
+    .parrafo{
+        width: 100%;
+    }
+    .resp{
+        width: 100%;
+    }
+    #mostrar_resultado{
+        width: 100%;
+        height: 90%;
+        position: absolute;
         padding: 0;
+    }
+    .tex_resultado{
+        height: 100%;
+        width: 95%;
+    }
+
+    .recuadro{
+        width: 85%;
+        height: 180px;
+        padding: 2% 0 0 0;
+        box-sizing: content-box;
+    
+    }
+    .mensaje{
+        padding: 6% 0 0 3%;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
     }
     #copiar{
         width: 50%;
